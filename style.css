@@ -112,10 +112,12 @@ h3 {
 
 .section__title {
     margin-bottom: .25em;
+    margin-left: .25em;
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    /* margin-top: 1em; */
 }
 
 .section__title--intro strong {
@@ -131,7 +133,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
-    padding: .025em 1em;
+    padding: 0.025em 3em 0 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -151,7 +153,8 @@ header {
 }
 .logo {
     max-width: 150px;
-    position: fixed;
+    /* position: fixed; */
+    
 }
 
 .nav  {
@@ -271,6 +274,8 @@ header {
 }
 
 @media (min-width: 600px) {
+
+    
     .intro {
         display: grid;
         width: min-content;
@@ -452,7 +457,7 @@ span {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(3, 480px);
+    /* grid-template-columns: repeat(3, 480px); */
     column-gap: 10px;
     row-gap: 15px; 
     justify-content: center;
@@ -481,6 +486,22 @@ span {
     transform: scale(1.2);
     opacity: .5;
 }
+
+@media(min-width: 900px) {
+
+    .portfolio {
+        grid-template-columns: repeat(3, 480px);
+    }
+    
+}
+
+/* @media(min-width: 600px) {
+
+    .portfolio {
+        grid-template-columns: repeat(3, 480px);
+    }
+    
+} */
 
 /* Footer */
 
