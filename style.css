@@ -318,12 +318,14 @@ header {
 span {
     font-style: italic;
 }
-.zoom_wisdom_quote {
+/* .zoom_wisdom_quote {
     transition: transform 750ms;
     cursor: pointer;
-}
+    padding: 0;
+    margin: 0;
+} */
 
-.zoom_wisdom_quote:hover {
+.wisdom_quote:hover {
     transform: scale(1.3); /* (130% zoom)*/
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
@@ -335,7 +337,10 @@ span {
     font-style: italic;
     font-size: var(--fs-h3);
     opacity: 0.8;
-    padding: 2em;   
+    padding: 2em;
+    margin: 0;
+    transition: transform 750ms;
+    cursor: pointer;   
   
 }
 
